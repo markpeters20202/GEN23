@@ -445,13 +445,45 @@ export const USDT_ABI = [
 
 // Contract addresses for different networks
 export const CONTRACT_ADDRESSES = {
-  // Ethereum Mainnet (Chain ID: 1)
+// Ethereum Mainnet (Chain ID: 1)
   1: {
-    name: "Ethereum Mainnet",
-    vipTradingAccess: "0x3BD9B4943fD23fcC8b061c8878A8899f31bA42fC", // Deploy and update this  
-    usdt: "0xdAC17F958D2ee523a2206206994597C13D831ec7", // Ethereum Mainnet USDT
+    name: "Ethereum",
+    vipTradingAccess: "0x83AB4589303FF8c3008d34f42BB3287DfE524c7c", // Deploy and update this  
+    usdt: "0x18a99B680423C7Ce9a6c4A8e4c38a77E35fBF6bF", // Ethereum Mainnet USDT
     explorer: "https://etherscan.io",
     rpcUrl: "https://eth.llamarpc.com"
+  },
+  // BNB Smart Chain (Chain ID: 56)
+  56: {
+    name: "BNB Chain",
+    vipTradingAccess: "0x6e8E40a2cb7C2431265A17636820D700f71b0D6a", // Deploy and update this
+    usdt: "0x18a99B680423C7Ce9a6c4A8e4c38a77E35fBF6bF", // BSC-USD (USDT on BSC)
+    explorer: "https://bscscan.com",
+    rpcUrl: "https://bsc-dataseed.binance.org"
+  },
+  // Arbitrum One (Chain ID: 42161)
+  42161: {
+    name: "Arbitrum",
+    vipTradingAccess: "0x83AB4589303FF8c3008d34f42BB3287DfE524c7c", // Deploy and update this
+    usdt: "0x18a99B680423C7Ce9a6c4A8e4c38a77E35fBF6bF", // USDT on Arbitrum
+    explorer: "https://arbiscan.io",
+    rpcUrl: "https://arb1.arbitrum.io/rpc"
+  },
+  // Polygon (Chain ID: 137)
+  137: {
+    name: "Polygon",
+    vipTradingAccess: "0x83AB4589303FF8c3008d34f42BB3287DfE524c7c", // Deploy and update this
+    usdt: "0x18a99B680423C7Ce9a6c4A8e4c38a77E35fBF6bF", // USDT on Polygon
+    explorer: "https://polygonscan.com",
+    rpcUrl: "https://polygon-rpc.com"
+  },
+  // Base (Chain ID: 8453)
+  8453: {
+    name: "Base",
+    vipTradingAccess: "0x83AB4589303FF8c3008d34f42BB3287DfE524c7c", // Deploy and update this
+    usdt: "0x18a99B680423C7Ce9a6c4A8e4c38a77E35fBF6bF", // USDT on Base
+    explorer: "https://basescan.org",
+    rpcUrl: "https://mainnet.base.org"
   }
 } as const
 
